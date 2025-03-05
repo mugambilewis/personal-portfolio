@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    font-family: "Playfair Display", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::root{
+    --mainColor: white;
+    --mainColorbg: #cbd4e7;
+    --headingColor:  #111827;
+    --paragraphColor: #2e3238;
+    --secondaryColor: #7775FF;
+}

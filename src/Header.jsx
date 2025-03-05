@@ -1,18 +1,32 @@
+import { FaBars, FaTimes } from "react-icons/fa";
+import {useRef} from 'react';
+import "/src/styles/Header.css";
+
+
 const Header = () => {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_now');
+  }
+
   return (
-    <header className="bg-headerBg text-white p-5 fixed top-0 w-full shadow-md">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Mugambi Lewis</h1>
-        <nav>
-          <ul className="flex space-x-6">
-            <li><a href="#about" className="hover:text-primary">About</a></li>
-            <li><a href="#skills" className="hover:text-primary">Skills</a></li>
-            <li><a href="#services" className="hover:text-primary">Services</a></li>
-            <li><a href="#projects" className="hover:text-primary">Projects</a></li>
-            <li><a href="#contact" className="hover:text-primary">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    
+    <header>
+      <h2>Mugambi.</h2>
+      
+      <nav ref = {navRef}>
+        <a href="#about" className="hover:text-primary">About</a>
+        <a href="#skills" className="hover:text-primary">Skills</a>
+        <a href="#services" className="hover:text-primary">Services</a>
+        <a href="#projects" className="hover:text-primary">Projects</a>
+        <a href="#contact" className="hover:text-primary">Contact</a>
+        <button className="nav-btn nav-close-btn" onClick = {showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick = {showNavbar}>
+        <FaBars />
+      </button>
     </header>
   );
 };
