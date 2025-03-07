@@ -8,9 +8,15 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import "/src/styles/App.css";
 
+import Button from "./Button";
+
+
+
 function App() {
   return (
-    <div className="bg-lightBg text-textlight dark:bg-darkBg dark:text-textDark">
+    <div className=" min-h-screen">
+    
+     
       <Header />
       <Hero />
       <About />
@@ -19,8 +25,12 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Button />
     </div>
   );
 }
 
 export default App;
+
+
+

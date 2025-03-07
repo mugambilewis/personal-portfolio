@@ -18,14 +18,14 @@ nav a {
     font-weight: 500;
 }
 nav a:hover {
-    color: #7775FF;
+    color: #b1aff3;
 }
 nav .nav-btn {
     padding: 5px;
     cursor: pointer;
     background: transparent;
     border: none;
-    color:#111827;
+   
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
