@@ -1,5 +1,9 @@
 const About = () =>{
-  return <div>About Page</div>;
+  return (
+    <div>
+      
+    </div>
+  );
 }
 
 export default About; // Now 'About' is the default export
