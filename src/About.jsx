@@ -1,6 +1,14 @@
 const About = () =>{
   return (
     <div>
+      <div flex>
+        <div>
+          <img />
+        </div>
+        <div>
+
+        </div>
+      </div>
       
     </div>
   );
