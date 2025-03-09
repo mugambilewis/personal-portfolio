@@ -1,18 +1,19 @@
-
+import { Icon } from "@iconify/react";
 import styled from 'styled-components';
 
-const Card = () => {
+// eslint-disable-next-line react/prop-types
+const Card = ({ icon, title, description }) => {
   return (
     <StyledWrapper>
       <div className="flip-card w-full h-[100px] sm:h-[120px] lg:h-[140px]">
         <div className="flip-card-inner">
-          <div className="flip-card-front">
+          <div className="flip-card-front flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full">
           
-          <h3 className="text-gray-800 text-xl font-semibold">Skill</h3>
+          <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
           </div>
           <div className="flip-card-back">
-            <p className="title">BACK</p>
-            <p>Leave Me</p>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+          <p className="text-gray-900 dark:text-gray-300 mt-2">{description}</p>
           </div>
         </div>
       </div>
