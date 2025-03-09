@@ -2,8 +2,7 @@ import Button from "./Button";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const Hero = () => {
  
