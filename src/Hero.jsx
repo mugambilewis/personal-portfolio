@@ -21,7 +21,7 @@ const Hero = () => {
     return () => typed.destroy(); // Cleanup on unmount
   }, []);
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-1">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-2">
       <div className="w-full md:w-1/2 flex justify-center">
         <img
           src="/images/profile.png"
@@ -30,8 +30,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="w-full md:w-1/2 mt-2 md:mt-0 ">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+      <div className="w-[100%] md:w-1/2 mt-2 md:mt-2 ">
+        <h1 className="text-2xl md:text-5xl font-bold text-gray-900 leading-tight">
         Hi, It&apos;s Mugambi Lewis
         </h1>
         <h2 className="text-3xl font-bold">
