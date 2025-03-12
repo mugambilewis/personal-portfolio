@@ -26,11 +26,11 @@ const Hero = () => {
         <img
           src="/images/profile.png"
           alt="Mugambi Lewis"
-          className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover rounded-lg shadow-lg"
+          className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
         />
       </div>
 
-      <div className="w-[100%] md:w-1/2 mt-2 md:mt-2 ">
+      <div className="w-[100%] md:w-1/2 mt-2 md:mt-2 space-y-4">
         <h1 className="text-2xl md:text-5xl font-bold text-gray-900 leading-tight">
         Hi, It&apos;s Mugambi Lewis
         </h1>
