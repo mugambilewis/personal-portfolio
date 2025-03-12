@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Contact = () => {
   return (
-    <StyledWrapper className="flex flex-col justify-center items-center mb-12">
+    <StyledWrapper className="">
       <div className="form-container w-full">
         <p className="title">Contact Me!</p>
         <form className="form">
