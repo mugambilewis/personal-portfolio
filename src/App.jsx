@@ -9,15 +9,16 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import "/src/styles/App.css";
 import Contconn from "./Contconn";
-import Graphics from "./Graphics";
+import Graphics from "./pages/Graphics";
 
 function App() {
   return (
     <div>
       
         <Routes>
-          {/*{<Route path="/" element={<Header />} />}*/}
-          <Route path="/graphics" element={<Graphics />} />
+          {<Route path="/" element={<Header />} />}
+          <Route path="/services" element={<Services />} />
+      <Route path="pages/graphics" element={<Graphics />} />
         </Routes>
       
       <div className="flex flex-col min-h-screen ">

@@ -1,13 +1,18 @@
 import Card from "./Card";
 import PropTypes from 'prop-types';
-
+import { motion } from "framer-motion";
 
 const Skills = () => {
 Skills.propTypes = {
   skill: PropTypes.string.isRequired,
 };
-    return(
-     
+  return(
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    className="p-10"
+  >
       <div className="flex flex-col justify-center items-center" id="skills">
         <div className=" top-0 px-6 py-4  rounded-md"><h1 className="text-3xl md:text-5xl font-bold text-gray-900">Skill</h1></div>
    
@@ -27,6 +32,7 @@ Skills.propTypes = {
         </div>
         
       </div>
+      </motion.div>
     ) ;
   }
   

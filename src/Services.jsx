@@ -1,10 +1,21 @@
 import Servicescard from './Servicescard';
+import { motion } from "framer-motion";
 
 const Services = () =>{
-    return(
-      // eslint-disable-next-line react/no-unknown-property
-      <div className="flex flex-col justify-center items-center" id="services">
-        <div className=" top-0 px-6 py-4  rounded-md"><h1 className="text-3xl md:text-5xl font-bold text-gray-900">Services</h1></div>
+  return(
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    className="p-10"
+  >
+      {/* eslint-disable-next-line react/no-unknown-property */}
+      <div className="py-8" id="services">
+        
+        <div className = "container mx-auto p-4"></div>
+
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900">My Services</h1>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <Servicescard 
@@ -30,6 +41,7 @@ const Services = () =>{
           />
         </div>
       </div>
+      </motion.div>
     );
   }
   

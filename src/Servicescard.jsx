@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 // eslint-disable-next-line react/prop-types
 const Servicescard = ({ icon, title, description, link }) => {
@@ -11,11 +13,18 @@ const Servicescard = ({ icon, title, description, link }) => {
           <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
           <p className="text-title">{title}</p>
           <p className="text-body">{description}</p>
-          <Link to={link}>See More</Link>
+          {link.startsWith("/") ? (
+        <Link to={link}>See More</Link>
+      ) : (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          See More
+        </a>
+      )}
         </div>
         <button className="card-button">More info</button>
       </div>
     </StyledWrapper>
+    
   );
 }
 
@@ -77,5 +86,11 @@ const StyledWrapper = styled.div`
   }`;
 
 
+Servicescard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
 
 export default Servicescard;
