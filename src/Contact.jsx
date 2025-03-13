@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Contact = () => {
   return (
     <StyledWrapper className="">
-      <div className="form-container w-full">
+      <div className="form-container w-full p-6 md:p-10 lg:p-16">
         <p className="title">Contact Me!</p>
         <form className="form">
           <div className="input-group">

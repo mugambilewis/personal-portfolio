@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 // eslint-disable-next-line react/prop-types
@@ -10,7 +11,7 @@ const Servicescard = ({ icon, title, description, link }) => {
           <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
           <p className="text-title">{title}</p>
           <p className="text-body">{description}</p>
-          <a href={link} target="_blank" rel="noreferrer" />
+          <Link to={link}>See More</Link>
         </div>
         <button className="card-button">More info</button>
       </div>
