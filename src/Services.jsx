@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Services = () =>{
   return(
     <motion.div 
-    initial={{ opacity: 0, scale: 0.9 }}
+    initial={{ opacity: 0, scale: 0.95 }}
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
     className="p-10"
@@ -22,21 +22,21 @@ const Services = () =>{
             icon="mdi:gear-play-outline" width="24" height="24" 
             title="Mechanical Engineering"
             description="Designing and developing mechanical systems."
-            link="https://www.google.com"
+            link="/mechanical"
           
           />
           <Servicescard 
             icon="mdi:gear-play-outline" width="24" height="24" 
-            title="Mechanical Engineering"
-            description="Designing and developing mechanical systems."
-            link="https://www.google.com"
+            title="Web Design"
+            description="Designing and developing websites."
+            link="/web-design"
           
           />
           <Servicescard 
             icon="mdi:gear-play-outline" width="24" height="24" 
             title="Digital Creator"
             description="Designing and developing mechanical systems."
-            link="/graphics"
+            link="/digital-creator"
             
           />
         </div>

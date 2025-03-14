@@ -1,10 +1,10 @@
 
 import styled from 'styled-components';
 
-const Graphics = () => {
+const DigitalCreator = () => {
   return (
     <StyledWrapper>
-      <div className="wrapper">
+      <div className="wrapper service-details">
         <div className="inner" style={{quantity: 10}}>
           <div className="card" style={{index: 0, colorCard: '142, 249, 252'}}>
             <div className="img" />
@@ -104,4 +104,4 @@ const StyledWrapper = styled.div`
       );
   }`;
 
-export default Graphics;
+export default DigitalCreator;

@@ -8,18 +8,12 @@ import PropTypes from 'prop-types';
 const Servicescard = ({ icon, title, description, link }) => {
   return (
     <StyledWrapper>
-      <div className="card w-full h-64 md:h-72 lg:h-80">
+      <div className="card service-card w-full h-64 md:h-72 lg:h-80">
         <div className="card-details">
           <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
           <p className="text-title">{title}</p>
           <p className="text-body">{description}</p>
-          {link.startsWith("/") ? (
-        <Link to={link}>See More</Link>
-      ) : (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          See More
-        </a>
-      )}
+          <Link to={link} className="see-more-link">See More</Link>
         </div>
         <button className="card-button">More info</button>
       </div>

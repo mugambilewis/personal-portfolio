@@ -1,38 +1,32 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Header";
-import Hero from "./Hero";
-import About from "./About";
-import Skills from "./Skills";
-import Services from "./Services";
-import Projects from "./Projects";
-{/*import Contact from "./Contact";*/}
+import Home from './pages/Home';
 import Footer from "./Footer";
 import "/src/styles/App.css";
-import Contconn from "./Contconn";
-import Graphics from "./pages/Graphics";
+
+import DigitalCreator from './pages/DigitalCreator';
+import Mechanical from "./pages/Mechanical";
+import WebDesign from './pages/WebDesign';
+
 
 function App() {
   return (
-    <div>
-      
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header /> {/* Header is visible on all pages */}
         <Routes>
-          {<Route path="/" element={<Header />} />}
-          <Route path="/services" element={<Services />} />
-      <Route path="pages/graphics" element={<Graphics />} />
+        <Route path="/" element={<Home />} /> {/* Home page with all sections */}
+        <Route path="/mechanical" element={<Mechanical />} /> {/* Dedicated page for Mechanical Engineering */}
+        <Route path="/web-design" element={<WebDesign />} />
+        <Route path="/digital-creator" element={<DigitalCreator />} /> {/* Dedicated page for Digital Creator */}
+
         </Routes>
-      
-      <div className="flex flex-col min-h-screen ">
-        <Header />
-        <Hero />
-        <About />
-        <Skills />
-        <Services />
-        <Projects />
-        <Contconn />
-        {/*<Contact />*/}
         <Footer />
+
+
       </div>
-    </div>
+    </Router>
+   
   );
 }
 
