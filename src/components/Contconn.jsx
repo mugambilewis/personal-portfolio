@@ -1,5 +1,5 @@
-import Connect from "./Connect";
-import Contact from "./Contact";
+import Connect from "../Connect";
+import Contact from "../Contact";
 import { motion } from "framer-motion";
 
 const Contconn = () => {

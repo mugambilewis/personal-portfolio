@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../Button";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 

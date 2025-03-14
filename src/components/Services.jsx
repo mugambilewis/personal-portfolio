@@ -1,4 +1,4 @@
-import Servicescard from './Servicescard';
+import Servicescard from '../Servicescard';
 import { motion } from "framer-motion";
 
 const Services = () =>{
@@ -9,7 +9,6 @@ const Services = () =>{
     transition={{ duration: 0.8 }}
     className="p-10"
   >
-      {/* eslint-disable-next-line react/no-unknown-property */}
       <div className="py-8" id="services">
         
         <div className = "container mx-auto p-4"></div>

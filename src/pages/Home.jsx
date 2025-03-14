@@ -1,21 +1,22 @@
-import Hero from "./Hero";
-import About from "./About";
-import Skills from "./Skills";
-import Services from "./Services";
-import Projects from "./Projects";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Services from "../components/Services";
+import Projects from "../components/Projects";
+import Contconn from "../components/Contconn";
 
-import Contconn from "./Contconn";
 
 function Home() {
-    return (
-      <div>
-        <Hero />
-        <About />
-        <Skills />
-        <Services />
-        <Projects />
-        <Contconn />
-      </div>
-    );
-  }
-  export default Home;
+  return (
+    <div>
+      <Hero />
+      <About />
+      <Skills />
+      <Services />
+      <Projects />
+      <Contconn /> {/* Added Contconn here */}
+    </div>
+  );
+}
+
+export default Home;

@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../Card";
 import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
 

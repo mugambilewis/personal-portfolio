@@ -15,10 +15,10 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header /> {/* Header is visible on all pages */}
         <Routes>
-        <Route path="/" element={<Home />} /> {/* Home page with all sections */}
-        <Route path="/mechanical" element={<Mechanical />} /> {/* Dedicated page for Mechanical Engineering */}
-        <Route path="/web-design" element={<WebDesign />} />
-        <Route path="/digital-creator" element={<DigitalCreator />} /> {/* Dedicated page for Digital Creator */}
+          <Route path="/" element={<Home />} /> {/* Home page with all sections */}
+          <Route path="/mechanical" element={<Mechanical />} /> {/* Dedicated page for Mechanical Engineering */}
+          <Route path="/web-design" element={<WebDesign />} />
+          <Route path="/digital-creator" element={<DigitalCreator />} /> {/* Dedicated page for Digital Creator */}
 
         </Routes>
         <Footer />
