@@ -16,32 +16,33 @@ const Services = () =>{
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 text-center"  >My Services</h1>
 
        
-{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16"> */} 
-        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+        <div className="flex items-center justify-center">
+          <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:p-10 lg:p-16 w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
 
-          <Servicescard 
-            icon="mdi:gear-play-outline" width="24" height="24" 
-            title="Mechanical Engineering"
-            description="Designing and developing mechanical systems."
-            link="/mechanical"
-          
-          />
-          <Servicescard 
-            icon="mdi:gear-play-outline" width="24" height="24" 
-            title="Web Design"
-            description="Designing and developing websites."
-            link="/web-design"
-          
-          />
-          <Servicescard 
-            icon="mdi:gear-play-outline" width="24" height="24" 
-            title="Digital Creator"
-            description="Designing and developing mechanical systems."
-            link="/digital-creator"
+            <Servicescard 
+              icon="mdi:gear-play-outline" width="24" height="24" 
+              title="Mechanical Engineering"
+              description="Designing and developing mechanical systems."
+              link="/mechanical"
             
-          />
-        </div>
+            />
+            <Servicescard 
+              icon="hugeicons:web-design-02" width="24" height="24"
+              title="Web Design"
+              description="Designing and developing websites."
+              link="/web-design"
+            
+            />
+            <Servicescard 
+               icon="fluent:design-ideas-16-filled" width="16" height="16" 
+              title="Digital Creator"
+              description="Designing and developing mechanical systems."
+              link="/digital-creator"
+              
+            />
+          </div>
       </div>
+    </div>
       </motion.div>
     );
   }
