@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 function DigitalCreator (){
   return (
+    
     <StyledWrapper>
-      <div className="wrapper service-details">
+      <div className="wrapper">
         <div className="inner" style={{quantity: 10}}>
           <div className="card" style={{index: 0, colorCard: '142, 249, 252'}}>
             <div className="img" />
@@ -44,6 +45,7 @@ function DigitalCreator (){
 
 const StyledWrapper = styled.div`
   .wrapper {
+    min-height: 100vh;
     width: 100%;
     height: 100%;
     position: relative;

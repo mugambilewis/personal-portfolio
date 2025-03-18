@@ -1,55 +1,96 @@
-
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const [activeTab, setActiveTab] = useState("experience");
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Grid Layout for About Me Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left Column: About Me Text */}
-          <div className="space-y-6">
-            <h1 className="text-3xl font-bold text-gray-900">About Me</h1>
-            <p className="text-gray-600">
-              An innovative and results-driven Mechanical Engineer with a unique blend of technical, creative, and cybersecurity expertise. I have combined my passion for design and programming to create efficient and secure solutions across a range of industries. I excel in designing mechanical systems, developing user-friendly web applications, crafting engaging graphics, building software, and securing digital environments, making me a versatile professional in all industries.
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    className="p-10"
+  >
+    <div className="bg-white text-gray-800 flex items-center justify-center p-10">
+      <div className="md:p-10 lg:p-16 w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
+    
+                  {/* Left Section */}
+          <div>
+
+            <h2 className="text-3xl font-bold text-gray-900">Why hire me?</h2>
+            <p className="mt-4 text-gray-800">
+              I am a dedicated software developer with over 4 years of experience in  building dynamic and responsive web applications.
+              My expertise lies in JavaScript, React, and Next.js, allowing me to create seamless user experiences.
+              I am passionate about problem-solving and continuously improving my skills to deliver high-quality solutions.
             </p>
-          </div>
-
-          {/* Right Column: Experience and Education */}
-          <div className="space-y-6">
-            {/* Experience Section */}
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900">Experience</h2>
-              <ul className="mt-4 space-y-4">
-                <li className="text-gray-600">
-                  <strong>Murang’a University of Technology</strong> (2021-2015)
-                  <ul className="list-disc list-inside ml-4">
-                    <li>Igembe Tea Factory</li>
-                    <li>Safaricom PLC</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            {/* Education Section */}
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900">Education</h2>
-              <ul className="mt-4 space-y-4">
-                <li className="text-gray-600">
-                  <strong>Murang’a University of Technology</strong> (2021-2015)
-                </li>
-                <li className="text-gray-600">
-                  <strong>FreeCodeCamp</strong>
-                </li>
-                <li className="text-gray-600">
-                  <strong>Self-Taught</strong>
-                </li>
-              </ul>
+            <div className="mt-6 flex flex-col gap-6 space-y-8">
+              <button
+                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "experience" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                onClick={() => setActiveTab("experience")}
+              >
+                Experience
+              </button>
+              <button
+                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "education" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                onClick={() => setActiveTab("education")}
+              >
+                Education
+              </button>
+              <button
+                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "about" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                onClick={() => setActiveTab("about")}
+              >
+                About Me
+              </button>
             </div>
           </div>
-        </div>
+
+          {/* Right Section - Content */}
+          <div>
+          {activeTab === "experience" && (
+              <div>
+                <h3 className="text-2xl font-bold">My Experience</h3>
+                <p className="mt-2 text-gray-800">I have worked on various projects that have honed my skills in full-stack development.</p>
+                <div className="mt-4 space-y-3">
+                  <div className="bg-[#e6f1fe] p-4 rounded-md">
+                    <p className="text-[#0768df]">2021-Present</p>
+                    <h4 className="text-lg font-semibold">Full-stack Developer</h4>
+                    <p className="text-gray-800">Milkyway Cooperation</p>
+                  </div>
+                  <div className="bg-[#e6f1fe] p-4 rounded-md">
+                    <p className="text-[#0768df]">2020-2021</p>
+                    <h4 className="text-lg font-semibold">Frontend Developer</h4>
+                    <p className="text-gray-800">Tech Innovations</p>
+                  </div>
+                  <div className="bg-[#e6f1fe] p-4 rounded-md">
+                    <p className="text-[#0768df]">2019-2020</p>
+                    <h4 className="text-lg font-semibold">Intern Developer</h4>
+                    <p className="text-gray-800">Web Solutions Inc.</p>
+                  </div>
+                </div>
+              </div>
+            )}
+            {activeTab === "education" && (
+              <div>
+                <h3 className="text-2xl font-bold">Education</h3>
+                <p className="mt-2 text-gray-800">Bachelor&apos;s Degree in Computer Science - XYZ University</p>
+                <p className="mt-2 text-gray-800">Graduated with Honors, specializing in Web Development and Software Engineering.</p>
+              </div>
+            )}
+            {activeTab === "about" && (
+              <div>
+                <h3 className="text-2xl font-bold">About Me</h3>
+                <p className="mt-2 text-gray-800">This is the About Me section.</p>
+              </div>
+            )}
+          </div>
+
+        </div>  
       </div>
     </div>
-  );
+    </motion.div>  
+);
 };
 
 export default About;
