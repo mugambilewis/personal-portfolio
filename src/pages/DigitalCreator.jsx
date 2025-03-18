@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-const DigitalCreator = () => {
+function DigitalCreator (){
   return (
     <StyledWrapper>
       <div className="wrapper service-details">

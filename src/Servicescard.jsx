@@ -12,9 +12,9 @@ const Servicescard = ({ icon, title, description, link }) => {
           <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
           <p className="text-title">{title}</p>
           <p className="text-body">{description}</p>
-          <Link to={link} className="see-more-link">See More</Link>
+          
         </div>
-        <button className="card-button">More info</button>
+        <button className="card-button"><Link to={link} className="see-more-link">See More</Link></button>
       </div>
     </StyledWrapper>
     

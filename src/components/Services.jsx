@@ -13,9 +13,11 @@ const Services = () =>{
         
         <div className = "container mx-auto p-4"></div>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900">My Services</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 text-center"  >My Services</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       
+{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16"> */} 
+        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
 
           <Servicescard 
             icon="mdi:gear-play-outline" width="24" height="24" 

@@ -22,10 +22,10 @@ const Hero = () => {
   }, []);
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-2">
-      <div className="w-full md:w-1/2 flex justify-center">
+      <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center">
         <img
           src="/images/profile.png"
-          alt="Mugambi Lewis"
+          alt="Mugambi Lewis Profile picture"
           className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
         />
       </div>

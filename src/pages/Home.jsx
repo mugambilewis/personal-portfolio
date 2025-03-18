@@ -8,7 +8,7 @@ import Contconn from "../components/Contconn";
 
 function Home() {
   return (
-    <div>
+    <div className="home p-4 gap-8">
       <Hero />
       <About />
       <Skills />
