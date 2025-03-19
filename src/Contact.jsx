@@ -6,21 +6,21 @@ const Contact = () => {
     <StyledWrapper className="">
       <div className="form-container w-full p-6 md:p-10 lg:p-16">
         <p className="title">Contact Me!</p>
-        <form className="form">
+        <form className="form" >
           <div className="input-group">
             <label htmlFor="username">Full Names</label>
-            <input type="text" name="username" id="username" placeholder />
+            <input type="text" name="username" id="username" placeholder="Enter Full name. " required />
           </div>
           <div className="input-group">
             <label htmlFor="password">Email</label>
-            <input type="email" name="email" id="email" placeholder />
+            <input type="email" name="email" id="email" placeholder="Enter Your Email." required/>
             
           </div>
           <div className="input-group textarea">
             <label htmlFor="username">Message</label>
-            <textarea type="text" name="message" id="message" placeholder />
+            <textarea type="text" name="message" id="message" placeholder="Enter Your Message." required/>
           </div>
-          <button className="sign">Send Message</button>
+          <button className="sign" type="submit">Send Message</button>
         </form>
         <div className="social-message">
           <div className="line" />

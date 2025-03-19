@@ -11,13 +11,12 @@ const Services = () =>{
   >
       <div className="" id="services">
         
-        <div className = "container">
-
+        
        
-        <div className=" top-0 px-6  text-center rounded-md"><h1 className="text-3xl md:text-5xl font-bold text-gray-900">Services</h1></div>
+        <div className=" top-0 text-center rounded-md"><h1 className="text-3xl md:text-5xl font-bold text-gray-900">Services</h1></div>
         <div className="flex items-center justify-center">
         
-          <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
+          <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
           
 
             <Servicescard 
@@ -44,7 +43,7 @@ const Services = () =>{
           </div>
       </div>
     </div>
-    </div>
+    
       </motion.div>
     );
   }

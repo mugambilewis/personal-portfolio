@@ -1,5 +1,5 @@
-import { Icon } from "@iconify/react";
 import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ icon, title, description }) => {
@@ -9,7 +9,7 @@ const Card = ({ icon, title, description }) => {
         <div className="flip-card-inner">
           <div className="flip-card-front flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full">
           
-          <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
+          <FontAwesomeIcon icon={icon} className="text-4xl text-blue-500 mb-3" />
           </div>
           <div className="flip-card-back">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>

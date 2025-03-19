@@ -1,4 +1,4 @@
-import Button from "../Button";
+{/*import Button from "../Button";*/}
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -42,8 +42,12 @@ const Hero = () => {
         Passionate Frontend Engineer dedicated to crafting seamless, responsive, and visually stunning user experiences.I blend creativity and technical expertise to bring ideas to life on the web. From interactive elements to performanceoptimization, my mission is to make every pixel count and create digital journeys that engage and inspire.Let’s build something beautiful together!
         </p>
         <div className="mt-16 flex justify-center md:justify-start gap-4">
-          <Button text="Resume" />
-          <Button text="Hire Me" />
+        <button
+              className="inline-block px-8 py-2 bg-white rounded-[0.375rem] text-[#60a5fa] text-base border-[2px] border-[#60a5fa] cursor-pointer transition duration-300 ease-in-out hover:bg-[#60a5fa] hover:text-white"
+            >Resume</button>
+          <button
+              className="inline-block px-8 py-2 bg-white rounded-[0.375rem] text-[#60a5fa] text-base border-[2px] border-[#60a5fa] cursor-pointer transition duration-300 ease-in-out hover:bg-[#60a5fa] hover:text-white"
+            >Hire Me</button>
         </div>
       </div>
   

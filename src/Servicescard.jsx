@@ -42,7 +42,7 @@ const StyledWrapper = styled.div`
   }
 
   .card-button {
-   transform: translate(-50%, 125%);
+   transform: translate(-50%, 100%);
    width: 60%;
    border-radius: 1rem;
    border: none;
