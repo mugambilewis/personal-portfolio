@@ -8,10 +8,10 @@ const About = () => {
     initial={{ opacity: 0, scale: 0.95 }}
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
-    className="p-10"
+    className="p-4"
   >
-    <div className="bg-white text-gray-800 flex items-center justify-center p-10">
-      <div className="md:p-10 lg:p-16 w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
+    <div className="bg-white text-gray-800 flex items-center justify-center ">
+      <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
     
@@ -24,7 +24,7 @@ const About = () => {
               My expertise lies in JavaScript, React, and Next.js, allowing me to create seamless user experiences.
               I am passionate about problem-solving and continuously improving my skills to deliver high-quality solutions.
             </p>
-            <div className="mt-6 flex flex-col gap-6 space-y-8">
+            <div className="mt-6 flex flex-col gap-4 space-y-4">
               <button
                 className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "experience" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
                 onClick={() => setActiveTab("experience")}

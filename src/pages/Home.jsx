@@ -8,14 +8,33 @@ import Contconn from "../components/Contconn";
 
 function Home() {
   return (
-    <div className="home p-4 gap-8">
-      <Hero />
-      <About />
-      <Skills />
-      <Services />
-      <Projects />
-      <Contconn /> {/* Added Contconn here */}
+    <div>
+      <div className="mb-2">
+        <Hero />
+      </div>
+      <div className="mb-2">
+        <About />
+      </div>
+
+      <div className="mb-2"> 
+        <Skills />
+      </div>
+
+      <div className="mb-2"> 
+        <Services />
+      </div>
+      
+      <div className="mb-2">
+        <Projects />
+      </div>
+      
+      <div>
+        <Contconn />  
+      </div>
     </div>
+      
+     
+    
   );
 }
 
