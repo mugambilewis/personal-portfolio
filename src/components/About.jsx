@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("experience");
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animate only once
+    threshold: 0.2,    // Trigger when 20% of the section is visible
+  });
+
   return (
     <motion.div 
     initial={{ opacity: 0, scale: 0.95 }}
@@ -18,11 +26,17 @@ const About = () => {
                   {/* Left Section */}
           <div>
 
-            <h2 className="text-3xl font-bold text-gray-900">Why hire me?</h2>
+          <motion.h2
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }} // Start position (hidden and below)
+          animate={inView ? { opacity: 1, y: 0 } : {}} // Animate to visible
+          transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
+          className=" top-0   rounded-md"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 my-8">Why should work with me</h2>
+        </motion.h2>
             <p className="mt-4 text-gray-800">
-              I am a dedicated software developer with over 4 years of experience in  building dynamic and responsive web applications.
-              My expertise lies in JavaScript, React, and Next.js, allowing me to create seamless user experiences.
-              I am passionate about problem-solving and continuously improving my skills to deliver high-quality solutions.
+            I combine technical expertise, creativity, and problem-solving to deliver top-tier results. As a Mechanical Engineer, I design high-precision CAD models optimized for real-world applications. As a Front-End Developer, I build sleek, high-performing websites. My Graphics Design skills ensure every project stands out. Passionate about quality, innovation, and efficiency, I turn ideas into reality. Let’s create something amazing!
             </p>
             <div className="mt-6 flex flex-col gap-4 space-y-4">
               <button
@@ -51,22 +65,22 @@ const About = () => {
           {activeTab === "experience" && (
               <div>
                 <h3 className="text-2xl font-bold">My Experience</h3>
-                <p className="mt-2 text-gray-800">I have worked on various projects that have honed my skills in full-stack development.</p>
+                <p className="mt-2 text-gray-800">I have worked on various projects that have honed my skills in mechanical engineering, web development, graphics design, and CAD modeling.</p>
                 <div className="mt-4 space-y-3">
                   <div className="bg-[#e6f1fe] p-4 rounded-md">
-                    <p className="text-[#0768df]">2021-Present</p>
-                    <h4 className="text-lg font-semibold">Full-stack Developer</h4>
-                    <p className="text-gray-800">Milkyway Cooperation</p>
+                    <p className="text-[#0768df]">2024</p>
+                    <h4 className="text-lg font-semibold">Mechanical Engineer</h4>
+                    <p className="text-gray-800">Igembe Tea Factory</p>
                   </div>
                   <div className="bg-[#e6f1fe] p-4 rounded-md">
-                    <p className="text-[#0768df]">2020-2021</p>
+                    <p className="text-[#0768df]">2024-Present</p>
                     <h4 className="text-lg font-semibold">Frontend Developer</h4>
-                    <p className="text-gray-800">Tech Innovations</p>
+                    <p className="text-gray-800">Freelance</p>
                   </div>
                   <div className="bg-[#e6f1fe] p-4 rounded-md">
-                    <p className="text-[#0768df]">2019-2020</p>
-                    <h4 className="text-lg font-semibold">Intern Developer</h4>
-                    <p className="text-gray-800">Web Solutions Inc.</p>
+                    <p className="text-[#0768df]">2023-Present</p>
+                    <h4 className="text-lg font-semibold">Graphics Designer</h4>
+                    <p className="text-gray-800">Freelance</p>
                   </div>
                 </div>
               </div>
@@ -74,8 +88,9 @@ const About = () => {
             {activeTab === "education" && (
               <div>
                 <h3 className="text-2xl font-bold">Education</h3>
-                <p className="mt-2 text-gray-800">Bachelor&apos;s Degree in Computer Science - XYZ University</p>
-                <p className="mt-2 text-gray-800">Graduated with Honors, specializing in Web Development and Software Engineering.</p>
+                <h4 className="font-semibold">Bachelor of Technology in Mechanical Engineering</h4>
+                <h4 className=" font-semibold">Certificate in Responsive Web Design, JavaScript and Data Structures, and Frontend Libraries</h4>
+               
               </div>
             )}
             {activeTab === "about" && (

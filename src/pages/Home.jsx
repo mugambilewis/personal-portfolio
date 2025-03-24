@@ -9,22 +9,22 @@ import Contconn from "../components/Contconn";
 function Home() {
   return (
     <div>
-      <div className="mb-2">
+      <div className="mb-4">
         <Hero />
       </div>
-      <div className="mb-2">
+      <div className="mb-4">
         <About />
       </div>
 
-      <div className="mb-2"> 
+      <div className="mb-4"> 
         <Skills />
       </div>
 
-      <div className="mb-2"> 
+      <div className="mb-4"> 
         <Services />
       </div>
       
-      <div className="mb-2">
+      <div className="mb-4">
         <Projects />
       </div>
       

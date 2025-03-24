@@ -1,11 +1,12 @@
-{/*import Button from "../Button";*/}
+{/*import Button from "../Button";
+  import { useState} from "react";*/}
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 
 
 const Hero = () => {
- 
+  
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -21,12 +22,14 @@ const Hero = () => {
     return () => typed.destroy(); // Cleanup on unmount
   }, []);
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-2">
+    <section 
+    
+    className="min-h-screen w-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-2">
       <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center">
         <img
           src="/images/profile.png"
           alt="Mugambi Lewis Profile picture"
-          className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-102"
         />
       </div>
 
@@ -39,7 +42,8 @@ const Hero = () => {
         </h2>
 
         <p className="mt-4 text-base text-gray-800 ">
-        Passionate Frontend Engineer dedicated to crafting seamless, responsive, and visually stunning user experiences.I blend creativity and technical expertise to bring ideas to life on the web. From interactive elements to performanceoptimization, my mission is to make every pixel count and create digital journeys that engage and inspire.Let’s build something beautiful together!
+        Bringing Ideas to Life with Design and Innovation.
+I’m a passionate Mechanical Engineer, Front-End Developer, and Graphics Designer who loves creating things that stand out. Whether it&apos;s engineering smart solutions, building stunning websites, or designing eye-catching visuals, I turn ideas into reality with creativity and precision. Every project I work on is driven by innovation, quality, and attention to detail, ensuring the best results every time. Let’s build something amazing together!
         </p>
         <div className="mt-16 flex justify-center md:justify-start gap-4">
         <button

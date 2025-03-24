@@ -9,7 +9,7 @@ const Servicescard = ({ icon, title, description, link }) => {
     <StyledWrapper>
       <div className="card service-card w-full h-64 md:h-72 lg:h-80">
         <div className="card-details">
-          <Icon icon={icon} className="text-7xl text-blue-500 mb-4" />
+          <Icon icon={icon} className="text-7xl text-blue-500 " />
           <p className="text-title">{title}</p>
           <p className="text-body">{description}</p>
           
@@ -28,7 +28,7 @@ const StyledWrapper = styled.div`
    background: #f5f5f5;
    position: relative;
    padding: 1.8rem;
-   border: 2px solid #c3c6ce;
+   border: none;
    transition: 0.5s ease-out;
    overflow: visible;
   }
@@ -70,6 +70,7 @@ const StyledWrapper = styled.div`
   /*Hover*/
   .card:hover {
    border-color: #008bf8;
+   background: #e6f1fe;
    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   }
 
