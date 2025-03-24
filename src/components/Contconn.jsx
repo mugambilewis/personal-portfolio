@@ -10,7 +10,7 @@ const Contconn = () => {
     transition={{ duration: 0.8 }}
     className="p-4"
   >
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center" id="contact">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
           <Contact />
           <Connect  />

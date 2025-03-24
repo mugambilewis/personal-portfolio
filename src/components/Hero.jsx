@@ -24,12 +24,12 @@ const Hero = () => {
   return (
     <section 
     id="hero"
-    className="min-h-screen w-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-2">
+    className="min-h-screen w-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-4">
       <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center my-2">
         <img
           src="/images/profile.png"
           alt="Mugambi Lewis Profile picture"
-          className="w-64 md:w-96 lg:w-[28rem] h-auto object-cover  shadow-lg transition-transform duration-300 hover:scale-102"
+          className="w-68 md:w-100 lg:w-[28rem] h-auto object-cover  shadow-lg transition-transform duration-300 hover:scale-102"
         />
       </div>
 
