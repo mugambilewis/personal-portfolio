@@ -18,7 +18,7 @@ const About = () => {
     transition={{ duration: 0.8 }}
     className="p-4"
   >
-    <div className="bg-white text-gray-800 flex items-center justify-center ">
+    <div className="bg-white text-gray-800 flex items-center justify-center" id="about">
       <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
@@ -33,26 +33,26 @@ const About = () => {
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
           className=" top-0   rounded-md"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 my-8">Why should work with me</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 ">Why should work with me</h2>
         </motion.h2>
             <p className="mt-4 text-gray-800">
             I combine technical expertise, creativity, and problem-solving to deliver top-tier results. As a Mechanical Engineer, I design high-precision CAD models optimized for real-world applications. As a Front-End Developer, I build sleek, high-performing websites. My Graphics Design skills ensure every project stands out. Passionate about quality, innovation, and efficiency, I turn ideas into reality. Let’s create something amazing!
             </p>
             <div className="mt-6 flex flex-col gap-4 space-y-4">
               <button
-                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "experience" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                className={`w-full py-2 px-4 text-lg font-semibold rounded-md ${activeTab === "experience" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
                 onClick={() => setActiveTab("experience")}
               >
                 Experience
               </button>
               <button
-                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "education" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                className={`w-full py-2 px-4 text-lg font-semibold rounded-md ${activeTab === "education" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
                 onClick={() => setActiveTab("education")}
               >
                 Education
               </button>
               <button
-                className={`w-full py-4 px-4 text-lg font-semibold rounded-md ${activeTab === "about" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
+                className={`w-full py-2 px-4 text-lg font-semibold rounded-md ${activeTab === "about" ? "bg-[#0768df] text-white" : "bg-[#60a5fa] text-white"}`}
                 onClick={() => setActiveTab("about")}
               >
                 About Me
@@ -88,8 +88,20 @@ const About = () => {
             {activeTab === "education" && (
               <div>
                 <h3 className="text-2xl font-bold">Education</h3>
-                <h4 className="font-semibold">Bachelor of Technology in Mechanical Engineering</h4>
-                <h4 className=" font-semibold">Certificate in Responsive Web Design, JavaScript and Data Structures, and Frontend Libraries</h4>
+                <p className="mt-2 text-gray-800">I have worked on various projects that have honed my skills in mechanical engineering, web development, graphics design, and CAD modeling.</p>
+                <div className="mt-4 space-y-3">
+                  <div className="bg-[#e6f1fe] p-4 rounded-md">
+                    <p className="text-[#0768df]">2021-2025</p>
+                    <h4 className="text-lg font-semibold">Mechanical Engineering</h4>
+                    <p className="text-gray-800">Igembe Tea Factory</p>
+                  </div>
+                  <div className="bg-[#e6f1fe] p-4 rounded-md">
+                    <p className="text-[#0768df]">2023-2024</p>
+                    <h4 className="text-lg font-semibold">Frontend Developer </h4>
+                    <p className="text-gray-800">FreeCodeCamp</p>
+                  </div>
+                </div>
+                
                
               </div>
             )}

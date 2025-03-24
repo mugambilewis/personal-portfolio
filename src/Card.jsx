@@ -24,7 +24,7 @@ const Card = ({ icon, title, description }) => {
 const StyledWrapper = styled.div`
   .flip-card {
     background-color: transparent;
-    
+  
     perspective: 1000px;
     font-family: sans-serif;
   }
