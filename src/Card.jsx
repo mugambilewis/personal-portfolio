@@ -13,7 +13,7 @@ const Card = ({ icon, title, description }) => {
           </div>
           <div className="flip-card-back">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-900 dark:text-gray-300 mt-2">{description}</p>
+          <p className="text-gray-900 dark:text-gray-500 mt-2">{description}</p>
           </div>
         </div>
       </div>
@@ -64,15 +64,15 @@ const StyledWrapper = styled.div`
   }
 
   .flip-card-front {
-    background: linear-gradient(120deg, rgb(230, 230, 255) 60%, rgb(204, 204, 255) 88%,
-       rgb(204, 204, 255) 40%, rgba(204, 204, 255, 0.603) 48%);
-    color: #1F2937;
+    background: linear-gradient(120deg, rgb(230, 241, 254) 60%, rgb(230, 241, 254) 88%,
+       rgb(230, 241, 254) 40%, rgba(230, 241, 254, 0.603) 48%);
+    color: #e6f1fe;
   }
 
   .flip-card-back {
-    background: linear-gradient(120deg, rgb(230, 230, 255) 30%, rgb(230, 230, 255) 88%,
-       rgb(230, 230, 255) 40%, rgb(230, 230, 255) 78%);
-    color: #1F2937;
+    background: linear-gradient(120deg, rgb(230, 241, 254) 30%, rgb(230, 241, 254) 88%,
+       rgb(230, 241, 254) 40%, rgb(230, 241, 254) 78%);
+    color: #e6f1fe;
     transform: rotateY(180deg);
   }`;
 
