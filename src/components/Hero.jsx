@@ -24,16 +24,16 @@ const Hero = () => {
   return (
     <section 
     id="hero"
-    className="min-h-screen w-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-4">
-      <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center my-2">
+    className="container-fluid min-h-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-0 md:px-16 bg-white gap-4">
+      <div className="w-[80%] md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center my-2">
         <img
           src="/images/profile.png"
           alt="Mugambi Lewis Profile picture"
-          className="w-68 md:w-100 lg:w-[28rem] h-auto object-cover  shadow-lg transition-transform duration-300 hover:scale-102"
+          className="img-fluid  shadow-lg transition-transform duration-300 hover:scale-102"
         />
       </div>
 
-      <div className="w-[100%] md:w-1/2 mt-2 md:mt-2 space-y-4">
+      <div className="container-fluid w-[100%] md:w-1/2 mt-2 md:mt-2 space-y-4">
         <h1 className="text-2xl md:text-5xl font-bold text-gray-900 leading-tight">
         Hi, It&apos;s Mugambi Lewis
         </h1>

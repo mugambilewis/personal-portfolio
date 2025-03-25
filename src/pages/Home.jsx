@@ -9,7 +9,7 @@ import Contconn from "../components/Contconn";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="mb-4">
+      <div className="mb-8">
         <Hero />
       </div>
       <div className="mb-4">
