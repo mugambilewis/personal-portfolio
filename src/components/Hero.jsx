@@ -41,8 +41,9 @@ const Hero = () => {
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ">
             I&apos;m a <span ref={typedRef} className="text-blue-400"></span>
         </h2>
-
-        <p className="mt-4 text-text-[clamp(1rem, 2vw, 1.5rem)] text-gray-800 ">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl italic font-semibold text-gray-700 mt-4">
+        &quot;Where engineering meets creativity—turning concepts into reality with precision and passion.&ldquo;</p>
+        <p className="mt-4 text-base  md:text-lg lg:text-xl text-gray-800 ">
         Bringing Ideas to Life with Design and Innovation.
 I’m a passionate Mechanical Engineer, Front-End Developer, and Graphics Designer who loves creating things that stand out. Whether it&apos;s engineering smart solutions, building stunning websites, or designing eye-catching visuals, I turn ideas into reality with creativity and precision. Every project I work on is driven by innovation, quality, and attention to detail, ensuring the best results every time. Let’s build something amazing together!
         </p>

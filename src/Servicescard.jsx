@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const Servicescard = ({ icon, title, description, link }) => {
   return (
     <StyledWrapper>
-      <div className="card service-card w-full h-64 md:h-72 lg:h-80">
+      <div className="card service-card w-full  p-2 sm:p-4 md:p-8">
         <div className="card-details">
           <Icon icon={icon} className="text-7xl text-blue-500 " />
           <p className="text-title">{title}</p>
