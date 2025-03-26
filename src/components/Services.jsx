@@ -36,7 +36,7 @@ const Services = () =>{
             <Servicescard 
               icon="mdi:gear-play-outline" width="20" height="20" 
               title="Mechanical Engineering"
-              description="I craft solutions that are not only functional but also optimized for performance. Want to see the gears in motion?"
+              description="I craft solutions that are not only functional but also optimized for performance.Precision meets creativity in my CAD designs. Want to see the gears in motion?"
               link="/mechanical"
             
             />
@@ -50,7 +50,7 @@ const Services = () =>{
             <Servicescard 
                icon="fluent:design-ideas-16-filled" width="16" height="16" 
               title="Digital Creator"
-              description="Whether it's graphics, videos, or digital content, I create visuals that tell compelling stories. Want to see the creativity unfold?"
+              description="Whether it's graphics, videos, or digital content, I create visuals that tell compelling stories.I craft visually stunning graphics that captivate, communicate."
               link="/digital-creator"
               
             />

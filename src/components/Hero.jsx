@@ -34,20 +34,20 @@ const Hero = () => {
         />
       </div>
 
-      <div className=" w-[95%]  md:w-2/3 md:mt-2 space-y-6">
+      <div className=" w-full md:w-2/3 md:mt-2 space-y-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 ">
-        Hi, It&apos;s Mugambi Lewis
+        Hi, I&apos;m Mugambi Lewis
         </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ">
-            I&apos;m a <span ref={typedRef} className="text-blue-400"></span>
+        <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold ">
+          I&apos;m a <span ref={typedRef} className="text-blue-400"></span>
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl italic font-semibold text-gray-700 mt-4">
+        <p className="text-lg sm:text-lg md:text-xl lg:text-2xl italic font-semibold text-gray-700 mt-2">
         &quot;Where engineering meets creativity—turning concepts into reality with precision and passion.&ldquo;</p>
         <p className="mt-4 text-base  md:text-lg lg:text-xl text-gray-800 ">
         Bringing Ideas to Life with Design and Innovation.
 I’m a passionate Mechanical Engineer, Front-End Developer, and Graphics Designer who loves creating things that stand out. Whether it&apos;s engineering smart solutions, building stunning websites, or designing eye-catching visuals, I turn ideas into reality with creativity and precision. Every project I work on is driven by innovation, quality, and attention to detail, ensuring the best results every time. Let’s build something amazing together!
         </p>
-        <div className="mt-12 flex  justify-center md:flex-row md:justify-start gap-4">
+        <div className="mt-8 flex  justify-center md:flex-row md:justify-start gap-4">
           <button
             className="inline-block px-8 py-2 bg-white rounded-[0.375rem] text-[#60a5fa] text-base border-[2px] border-[#60a5fa] cursor-pointer transition duration-300 ease-in-out hover:bg-[#60a5fa] hover:text-white"
               >Resume
