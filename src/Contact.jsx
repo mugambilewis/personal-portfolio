@@ -1,11 +1,13 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
+
+
 
 const Contact = () => {
 
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -13,14 +15,20 @@ const Contact = () => {
       .sendForm('service_1sycllo', 'template_xki6ogq', form.current, {
         publicKey: 'ImNT90J-k7xC156cy',
       })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+      .then(() => {
+        console.log('SUCCESS!');
+        toast.success('✅ Message sent successfully!', {
+          position: 'top-right',
+          autoClose: 3000, // ✅ This should be inside the object
+        });
+      })
+      .catch((error) => {
+        console.log('FAILED...', error.text);
+        toast.error('❌ Message failed to send. Error: ' + error.text, {
+          position: 'top-right',
+          autoClose: 3000,
+        });
+      });
   };
 
   return (

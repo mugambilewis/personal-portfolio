@@ -54,6 +54,7 @@ Skills.propTypes = {
           <Card />
           <Card />
           <Card />
+          <Card />
         </div>
         
       </div>

@@ -19,7 +19,7 @@ function App() {
           <Route path="/mechanical" element={<Mechanical />} /> {/* Dedicated page for Mechanical Engineering */}
           <Route path="/web-design" element={<WebDesign />} />
           <Route path="/digital-creator" element={<DigitalCreator />} /> {/* Dedicated page for Digital Creator */}
-
+          
         </Routes>
         <Footer />
 

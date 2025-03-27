@@ -4,7 +4,8 @@ import Skills from "../components/Skills";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Contconn from "../components/Contconn";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Home() {
   return (
@@ -31,9 +32,10 @@ function Home() {
       <div>
         <Contconn />  
       </div>
+      <ToastContainer /> 
     </div>
       
-     
+      
     
   );
 }
