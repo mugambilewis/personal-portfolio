@@ -48,11 +48,11 @@ const Header = () => {
       
       <nav ref = {navRef}>
         
-        <a href="#about" className="hover:text-primary">About</a>
-        <a href="#skills" className="hover:text-primary">Skills</a>
-        <a href="#services" className="hover:text-primary">Services</a>
-        <a href="#projects" className="hover:text-primary">Projects</a>
-        <a href="#contact" className="hover:text-primary">Contact</a>
+        <a href="#about" className="hover:text-primary text-lg">About</a>
+        <a href="#skills" className="hover:text-primary text-lg">Skills</a>
+        <a href="#services" className="hover:text-primary text-lg">Services</a>
+        <a href="#projects" className="hover:text-primary text-lg">Projects</a>
+        <a href="#contact" className="hover:text-primary text-lg">Contact</a>
         <button className="nav-btn nav-close-btn" onClick = {showNavbar}>
           <FaTimes />
         </button>

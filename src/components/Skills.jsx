@@ -2,15 +2,15 @@ import Card from "../Card";
 import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { faReact, } from "@fortawesome/free-brands-svg-icons";
-import { faPaintBrush, faFilePowerpoint, } from "@fortawesome/free-solid-svg-icons";
-
+import { faReact } from "@fortawesome/free-brands-svg-icons";  // ✅ Correct import
+import { faPaintBrush, faFilePowerpoint } from "@fortawesome/free-solid-svg-icons";  
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Skills = () => {
   
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animate only once
-    threshold: 0.2,    // Trigger when 20% of the section is visible
+    triggerOnce: true, 
+    threshold: 0.2,    
   });
 Skills.propTypes = {
   skill: PropTypes.string.isRequired,
@@ -36,21 +36,20 @@ Skills.propTypes = {
         </motion.h2>
         
         <div className="grid grid-cols-4 top-10 sm:grid-cols-4 sm:px-1 lg:grid-cols-6 gap-4  w-[95%] md:w-[80%] lg:w-[60%] mx-auto">
+          
           <Card icon={faReact} title="CSS3" description="Styling beautiful layouts and animations." />
 
           <Card icon={faPaintBrush}title="PowerPoint"/>
 
           <Card icon={faFilePowerpoint} title="React.JS"/>
 
-          <Card icon={faFilePowerpoint}
-          title="TailwindCSS"/>
+          <Card icon={faFilePowerpoint} title="TailwindCSS"/>
 
-          <Card icon="devicon:redux" width="85" height="85" title="Redux"/>
+          <Card icon={<FontAwesomeIcon icon={faReact} />} title="React.JS" />
+<Card icon={<FontAwesomeIcon icon={faPaintBrush} />} title="PowerPoint" />
+<Card icon={<FontAwesomeIcon icon={faFilePowerpoint} />} title="TailwindCSS" />
 
-          <Card icon="devicon:canva" width="128" height="128" title="Canva"/>
-
-          <Card icon="arcticons:autocad" width="48" height="48" title="AutoCAD"/>
-          <Card icon="hugeicons:capcut-rectangle" width="24" height="24" title="CapCut"/>
+         
           <Card />
           <Card />
           <Card />

@@ -12,8 +12,8 @@ const Card = ({ icon, title, description }) => {
           <FontAwesomeIcon icon={icon} className="text-4xl text-blue-500 mb-3" />
           </div>
           <div className="flip-card-back">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-900 dark:text-gray-500 mt-2">{description}</p>
+          <h3 className="text-base font-semibold text-gray-800">{title}</h3>
+          <p className="text-gray-800 dark:text-gray-500 mt-2">{description}</p>
           </div>
         </div>
       </div>
@@ -24,7 +24,6 @@ const Card = ({ icon, title, description }) => {
 const StyledWrapper = styled.div`
   .flip-card {
     background-color: transparent;
-  
     perspective: 1000px;
     font-family: sans-serif;
   }

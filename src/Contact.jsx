@@ -1,26 +1,47 @@
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_1sycllo', 'template_xki6ogq', form.current, {
+        publicKey: 'ImNT90J-k7xC156cy',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <StyledWrapper className="">
       <div className="form-container w-full p-6 md:p-10 lg:p-16">
         <p className="title">Contact Me!</p>
-        <form className="form" >
+        <form className="form" ref={form} onSubmit={sendEmail} >
           <div className="input-group">
-            <label htmlFor="username">Full Names</label>
-            <input type="text" name="username" id="username" placeholder="Enter Full name. " required />
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="username" placeholder="Enter Full name. " required autoComplete/>
           </div>
           <div className="input-group">
-            <label htmlFor="password">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email." required/>
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email." required autoComplete/>
             
           </div>
           <div className="input-group textarea">
-            <label htmlFor="username">Message</label>
-            <textarea type="text" name="message" id="message" placeholder="Enter Your Message." required/>
+            <label htmlFor="message">Message</label>
+            <textarea type="text" name="message" id="message" placeholder="Enter Your Message." required autoComplete/>
           </div>
-          <button className="sign" type="submit">Send Message</button>
+          <button className="sign" type="submit" value="Send">Send Message</button>
         </form>
         <div className="social-message">
           <div className="line" />

@@ -63,8 +63,8 @@ const StyledWrapper = styled.div`
 
   /*Text*/
   .text-title {
-   font-size: 1.5em;
-   font-weight: bold;
+   font-size: 1.2em;
+   font-weight: semibold;
   }
 
   /*Hover*/
