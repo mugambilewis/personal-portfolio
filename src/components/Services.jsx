@@ -17,17 +17,17 @@ const Services = () =>{
     transition={{ duration: 0.8 }}
     className="p-4 "
   >
-      <div className="my-8" id="services">
+      <div className="my-8 bg-[#FDFDFD]" id="services">
         
-        <motion.h2
+        <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }} // Start position (hidden and below)
           animate={inView ? { opacity: 1, y: 0 } : {}} // Animate to visible
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
           className=" top-0 px-6  rounded-md"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 my-8 text-center">Services</h1>
-        </motion.h2>
+          <h1 className="text-3xl  md:text-5xl font-bold text-gray-900 my-8 text-center">Services</h1>
+        </motion.div>
         <div className="flex items-center justify-center">
         
           <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">

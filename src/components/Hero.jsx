@@ -50,12 +50,12 @@ I’m a passionate Mechanical Engineer, Front-End Developer, and Graphics Design
         <div className="mt-8 flex  justify-center md:flex-row md:justify-start gap-4">
           <button
             className="inline-block px-8 py-2 bg-white rounded-[0.375rem] text-[#60a5fa] text-base border-[2px] border-[#60a5fa] cursor-pointer transition duration-300 ease-in-out hover:bg-[#60a5fa] hover:text-white"
-              >Resume
+              ><a href="#contact">Contact Me</a>
           </button>
          
           <button
             className="inline-block px-8 py-2 bg-white rounded-[0.375rem] text-[#60a5fa] text-base border-[2px] border-[#60a5fa] cursor-pointer transition duration-300 ease-in-out hover:bg-[#60a5fa] hover:text-white"
-            >Hire Me
+            onClick={() => window.location.href = 'mailto:mugambilewis001@gmail.com'}>Hire Me
           </button>
           
           

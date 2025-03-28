@@ -1,20 +1,24 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ icon, title, description }) => {
   return (
     <StyledWrapper>
-      <div className="flip-card w-full h-[100px] sm:h-[120px] lg:h-[140px]">
+      <div className="flip-card w-full h-25 sm:h-30 lg:h-35">
         <div className="flip-card-inner">
-          <div className="flip-card-front flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full">
-          
-          <FontAwesomeIcon icon={icon} className="text-4xl text-blue-500 mb-3" />
-          </div>
-          <div className="flip-card-back">
-          <h3 className="text-base font-semibold text-gray-800">{title}</h3>
-          <p className="text-gray-800 dark:text-gray-500 mt-2">{description}</p>
-          </div>
+        <div className="flip-card-front flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full">
+          <img 
+            src={icon}  // Dynamically passed from Skills.jsx
+            alt={title}
+            className="w-12 h-12 object-contain"
+          />
+        </div>
+        {/* Back Side (Text) */}
+        <div className="flip-card-back p-1"> 
+          <p className="font-semibold text-gray-800 truncate">{title}</p>
+          <p className="text-gray-600 mt-2">{description}</p>
+        </div>
         </div>
       </div>
     </StyledWrapper>

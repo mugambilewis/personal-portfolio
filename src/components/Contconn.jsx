@@ -15,7 +15,6 @@ const Contconn = () => {
           <Contact />
           <Connect  />
          
-          
         </div>
       </div>
       </motion.div>

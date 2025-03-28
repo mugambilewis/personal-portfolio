@@ -18,7 +18,7 @@ const About = () => {
     transition={{ duration: 0.8 }}
     className="p-4"
   >
-    <div className="bg-white text-gray-800 flex items-center justify-center" id="about">
+    <div className="bg-[#FDFDFD] text-gray-800 flex items-center justify-center" id="about">
       <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> 
@@ -26,7 +26,7 @@ const About = () => {
                   {/* Left Section */}
           <div>
 
-          <motion.h2
+          <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }} // Start position (hidden and below)
           animate={inView ? { opacity: 1, y: 0 } : {}} // Animate to visible
@@ -34,7 +34,7 @@ const About = () => {
           className=" top-0   rounded-md"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 ">Why should work with me</h2>
-        </motion.h2>
+        </motion.div>
             <p className="mt-4 text-gray-800">
             I combine technical expertise, creativity, and problem-solving to deliver top-tier results. As a Mechanical Engineer, I design high-precision CAD models optimized for real-world applications. As a Front-End Developer, I build sleek, high-performing websites. My Graphics Design skills ensure every project stands out. Passionate about quality, innovation, and efficiency, I turn ideas into reality. Let’s create something amazing!
             </p>

@@ -32,22 +32,22 @@ const Contact = () => {
   };
 
   return (
-    <StyledWrapper className="">
+    <StyledWrapper>
       <div className="form-container w-full p-6 md:p-10 lg:p-16">
         <p className="title">Contact Me!</p>
         <form className="form" ref={form} onSubmit={sendEmail} >
           <div className="input-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="username" placeholder="Enter Full name. " required autoComplete/>
+            <label htmlFor="username">Name</label>
+            <input type="text" name="name" id="username" placeholder="Enter Full name. " required autoComplete="true"/>
           </div>
           <div className="input-group">
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email." required autoComplete/>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email." required autoComplete="true"/>
             
           </div>
           <div className="input-group textarea">
             <label htmlFor="message">Message</label>
-            <textarea type="text" name="message" id="message" placeholder="Enter Your Message." required autoComplete/>
+            <textarea type="text" name="message" id="message" placeholder="Enter Your Message." required autoComplete="true"/>
           </div>
           <button className="sign" type="submit" value="Send">Send Message</button>
         </form>
@@ -73,7 +73,7 @@ const Contact = () => {
           </button>
         </div>
         <p className="signup">Don&apos;t have an account?
-          <a rel="noopener noreferrer" href="#" className>Thanks!</a>
+          <a rel="noopener noreferrer" href="#" >Thanks!</a>
         </p>
       </div>
     </StyledWrapper>

@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <div className="mb-8">
         <Hero />
       </div>
@@ -34,8 +34,6 @@ function Home() {
       </div>
       <ToastContainer /> 
     </div>
-      
-      
     
   );
 }
