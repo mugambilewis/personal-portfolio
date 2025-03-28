@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
 
       <div className=" w-full md:w-2/3 md:mt-2 space-y-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 ">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 font-['Playfair_Display']">
         Hi, I&apos;m Mugambi Lewis
         </h1>
         <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold ">

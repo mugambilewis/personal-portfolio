@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
-    font-family: "Playfair Display", serif;
-    
+    font-family: 'Winky Sans', 'Playfair Display', 'Segoe UI', Roboto, -apple-system, sans-serif;
     box-sizing: border-box;
 }
 ::root{
