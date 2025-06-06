@@ -1,9 +1,11 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import {useRef} from 'react';
 import "/src/styles/Header.css";
-import { useEffect } from 'react';
-
+import { useEffect} from 'react';
+import ThemeToggle from "./ThemeToggle";
 const Header = () => {
+  
+  
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_now');
@@ -45,7 +47,8 @@ const Header = () => {
     
     <header>
       <h2>Mugambi.</h2>
-      
+       
+      <ThemeToggle />
       <nav ref = {navRef}>
         
         <a href="#about" className="hover:text-primary text-lg">About</a>

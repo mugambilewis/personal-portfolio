@@ -19,14 +19,14 @@ const Contact = () => {
         console.log('SUCCESS!');
         toast.success('✅ Message sent successfully!', {
           position: 'top-right',
-          autoClose: 3000, // ✅ This should be inside the object
+          autoClose: 200, // ✅ This should be inside the object
         });
       })
       .catch((error) => {
         console.log('FAILED...', error.text);
         toast.error('❌ Message failed to send. Error: ' + error.text, {
           position: 'top-right',
-          autoClose: 3000,
+          autoClose: 200,
         });
       });
   };

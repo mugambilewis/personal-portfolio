@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section 
     id="hero"
-    className="w-screen md:min-h-[calc(100vh-5rem)] flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-16 bg-white gap-6">
+    className="w-screen md:min-h-[calc(100vh-5rem)] flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-16 bg-white dark:bg-gray-800  gap-6">
 
       <div className="w-3/4 md:w-1/3 flex justify-center my-2">
         <img
@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
 
       <div className=" w-full md:w-2/3 md:mt-2 space-y-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 font-['Playfair_Display']">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white font-['Playfair_Display']">
         Hi, I&apos;m Mugambi Lewis
         </h1>
         <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold ">
