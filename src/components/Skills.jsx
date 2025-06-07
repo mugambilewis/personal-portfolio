@@ -101,12 +101,12 @@ Skills.propTypes = {
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
           className=" top-0 px-6 rounded-md"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 my-8">Skills</h1>
+          <h1 className="text-3xl md:text-5xl font-bold  my-8">Skills</h1>
         </motion.div>
-        <p className=" text-gray-800  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
+        <p className="  w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
         I excel in problem-solving and analytical thinking, using an engineering mindset to tackle challenges efficiently. With strong project management skills, I plan and execute tasks effectively using Agile methodologies. My expertise in technical writing and documentation ensures clear and precise communication in reports and designs. I also leverage affiliate marketing and monetization strategies to maximize digital opportunities. Additionally, my communication and public speaking skills enable me to collaborate effectively, while my adaptability keeps me ahead in a fast-evolving tech landscape.
         </p>
-        <h2 className="text-3xl md:text-5xl mt-6 font-bold text-gray-900 ">Technical skills</h2>
+        <h2 className="text-3xl md:text-5xl mt-6 font-bold  ">Technical skills</h2>
 
         <div className="grid grid-cols-4 mt-4 sm:grid-cols-4 sm:px-1 lg:grid-cols-6 gap-2 md:gap-4  w-[95%] md:w-[80%] lg:w-[60%] mx-auto">
             {skills.map((skill, index) => (

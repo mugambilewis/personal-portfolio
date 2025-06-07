@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     
-    <header>
+    <header className="dark:bg-gray-800">
       <h2>Mugambi.</h2>
        
       <ThemeToggle />

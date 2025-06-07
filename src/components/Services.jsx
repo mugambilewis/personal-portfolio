@@ -17,7 +17,7 @@ const Services = () =>{
     transition={{ duration: 0.8 }}
     className="p-4 "
   >
-      <div className="my-8 bg-[#FDFDFD]" id="services">
+      <div className="my-8" id="services">
         
         <motion.div
           ref={ref}
@@ -26,7 +26,7 @@ const Services = () =>{
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
           className=" top-0 px-6  rounded-md"
         >
-          <h1 className="text-3xl  md:text-5xl font-bold text-gray-900 my-8 text-center">Services</h1>
+          <h1 className="text-3xl  md:text-5xl font-bold my-8 text-center">Services</h1>
         </motion.div>
         <div className="flex items-center justify-center">
         
